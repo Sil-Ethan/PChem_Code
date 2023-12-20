@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{graphicx}
+\graphicspath{ {./images/} } 
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage{cancel}
+
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ZZ}{\mathbb{Z}_{\ge 0}}
+\newcommand{\cala}{\mathcal{A}}
+\newcommand{\cald}{\mathcal{D}}
+\newcommand{\calh}{\mathcal{H}}
+\newcommand{\call}{\mathcal{L}}
+\newcommand{\calr}{\mathcal{R}}
+\newcommand{\la}{\mathbf{a}}
+\newcommand{\lgl}{\mathfrak{gl}}
+\newcommand{\lsl}{\mathfrak{sl}}
+\newcommand{\lieg}{\mathfrak{g}}
+
+\title{CHEM304 - Equation Sheet}
+\author{Ethan Silva}
+\date{October 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Chapter 1: Four Main Energy Types}
+
+This chapter went over these four energy types: transitional, rotational, vibrational, and electronic. Here are those equations and explanations of each of the variables:
+\begin{align*}
+    \varepsilon_{\text{trans}}=\frac{h^2}{8m}\left(\frac{n_x\:^2}{a^2}+\frac{n_y\:^2}{b^2}+\frac{n_z\:^2}{c^2}\right)
+\end{align*}
+where $n$ are the quantum numbers, $a,b,c$ are the parallelepiped sides of a rectangular box, and $m$ is the mass of a particle confined to some region of space. 
+
+\noindent- - - 
+
+\noindent Rotational Equation: $J$ is quantum number, and $I$ is moment of inertia: 
+$$\varepsilon_{\text{rot}}=\frac{\hbar^2}{2I}J(J+1)$$
+
+\noindent- - - 
+
+\noindent Vibrational Equation: $v_{\text{vib}}$ is the vibrational energy and $\nu$ is the index (quantum number).
+$$\varepsilon_{\text{vib}}=\sum_{j=1}^{\nu_{j}} hv_{j}(\nu_j+\frac{1}{2}) $$
+
+\noindent - - - 
+
+\noindent Electronic Equation: 
+$$\varepsilon_{\text{elect}}=-D_e $$
+
+\section{Chapter 2: Properties of Gases}
+
+This chapter discussed the properties of gases and here are the most important equations involving gases: 
+\begin{enumerate}
+    \item[IGL)] Below is the Ideal Gas Law where $P$ is pressure, $V$ is volume, $n$ is the number of moles, $R$ is the gas constant, and $T$ is temperature:
+    $$PV=nRT$$
+
+    \item[VDW)] Below is the Van Der Waal equation where $a$ and $b$ are constants. The constant $a$ represents the attractiveness between the molecules of the gas and $b$ represents the size of the molecules. 
+    $$\left(P+\frac{a}{\overline{V}^2}\right)(\overline{V}-b)=RT$$
+    where note that $\overline{V}=V/n$. Rewriting this equation in terms of pressure gives us the following equation: 
+    $$P=\frac{RT}{\overline{V}-b}-\frac{a}{\overline{V}^2}$$
+
+    \item[CF)] Another important equation to consider is the compressibility factor $Z$. The compressibility factor is a way to understand of a gas behaves differently from an ideal gas. The equation for $Z$ is the following: 
+    $$Z=\frac{P\overline{V}}{RT}$$
+    Where for the Van Der Waal equation,
+    $$Z=\frac{\overline{V}}{\overline{V}-b}-\frac{a}{RT\overline{V}}$$
+
+    \item[RL)] Here is the Redlich Equation:
+    $$P=\frac{RT}{\overline{V}-B}-\frac{A}{T^{1/2}\overline{V}(\overline{V}+B)}$$
+    Where $A$ and $B$ are constants.
+\end{enumerate}
+\section{Chapter 3: Partition Functions}
+
+The chapter went over the following concepts: partition functions, average ensemble energy, and the heat capacity. Here are the equations describing those concepts:
+
+\begin{enumerate}
+    \item[Q)] The partition function is all of the possible Boltzmann factors of a particularly system given by the following equation: 
+    $$Q(N,V,\beta)=\sum_ig_ie^{-\beta E_i(N,V)}$$
+    where $g_i$ accounts of degeneracy, and $\beta=1/k_BT$ where $k_B$ is the Boltzmann constant and $T$ is temperature. It can also be written as 
+    $$Q(N,V,T)=\sum_ig_ie^{- E_i(N,V)/k_BT}$$
+\end{enumerate}
+\end{document}
+S
